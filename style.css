@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+}
+
+.header{
+    background-color: lightgreen;
+}
+
+.header h3{
+    padding: 1rem 0;
+}
+
+.banner{
+    background: url(img/banner.jpg);
+    height: 300px;
+
+}
+
+.book{
+    display: inline-block;
+    border: 2px solid lightgray;
+    height: 150px;
+    text-align: center;
+    
+}
+
+.book-title{
+    font-size: 1.4rem;
+    padding:.4rem 0;
+}
+
+.book-author{
+    font-size: 1.2rem;
+    padding: .2rem 0;
+}
