@@ -1,13 +1,27 @@
 *{
     margin: 0;
+    --dark-olive:#646f4b;
+    --ash-grey:#c5d6c5 ; 
+    --xanadu: #748673;
+    --cambridge-blue: #bfd2bf;
+    --cafe-noir: #46351d;
+    --honeydew: #e4eee4;
 }
+
+body{
+    background-color: var(--honeydew);
+}
+
+
 
 .header{
-    background-color: lightgreen;
+    background-color: var(--dark-olive);
+    color: var(--ash-grey);
 }
 
-.header h3{
-    padding: 1rem 0;
+.header h1{
+    padding: 1rem;
+    font-size: 2rem;
 }
 
 .banner{
@@ -16,20 +30,162 @@
 
 }
 
-.book{
-    display: inline-block;
-    border: 2px solid lightgray;
-    height: 150px;
-    text-align: center;
-    
+.main-content{
+    padding:0 2rem;
+    width: 70%;
+    margin: auto;
+
 }
 
+.title-main-content{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: var(--cafe-noir);
+}
+
+.new-book{
+    display: block;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    padding: 5px 15px;
+    background-color: var(--dark-olive);
+    color:var(--ash-grey);
+    border-color: var(--ash-grey);
+    border-radius: 10px;
+}
+
+.books-container{
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    gap: 10px;
+}
+
+.book{
+    border: 2px solid var(--cafe-noir);
+    height: 260px;
+    text-align: center;
+    background-color: var(--cambridge-blue);
+    border-radius: 5px;
+    color: var(--cafe-noir);
+}
+
+.already-read-book{
+    border: 2px solid black;
+    height: 260px;
+    text-align: center;
+    background-color: var(--xanadu);
+    color: var(--ash-grey);
+}
+
+
 .book-title{
-    font-size: 1.4rem;
-    padding:.4rem 0;
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    height: 20%;
 }
 
 .book-author{
     font-size: 1.2rem;
-    padding: .2rem 0;
+    padding: .5rem 0;
+}
+
+.book-pages{
+    padding: .4rem 0 1rem 0;
+}
+
+.book-read-button{
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color:  rgb(112, 172, 112);
+    border-style: none;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+
+.book-not-read{
+    padding: 5px 15px;
+    border-radius: 5px; 
+    background-color: rgb(235, 73, 73);
+    border-style: none;
+    text-align: center;
+}
+
+.remove-book{
+    display: block;
+    padding: 6px 8px;
+    margin: .3rem auto;
+    background-color: var(--cafe-noir);
+    color: var(--ash-grey);
+    border-style: none;
+    border-radius: 5px;
+    font-size: 1rem;
+
+}
+
+/*FORM*/
+
+.book-form{
+    background-color: lightgray;
+    outline: 3px solid black;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 30%;
+    left: calc(50% - 200px);
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.book-form ul{
+    width: 80%;
+    list-style: none;
+    padding: 0;
+    margin: auto;
+}
+
+.book-form li{
+    padding: .5rem 0;
+}
+
+.book-form label{
+    padding: .5rem 0;
+}
+
+.book-form input{
+    width: 100%;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+.block{
+    display: block;
+}
+
+.button-form{
+    border-radius: 10px;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: .5rem 1rem;
+    background-color: white;
+}
+
+.close-cross{
+    /* padding-top: 4px; */
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -400px;
+    left: 175px;
+    background-color: white; 
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.hidden{
+    display: none;
 }

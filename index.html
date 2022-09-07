@@ -9,22 +9,50 @@
 </head>
 <body>
     <section class="header">
-        <h3>LIbrary</h3>
+        <h1>Library</h1>
     </section>
     <div class="banner">
         
     </div>
 
     <div class="main-content">
-        <h3>My books</h3>
+        <button class="new-book" type="button"> + Add Book</button>
+        <h2 class="title-main-content">My books</h2>
         <div class="books-container">
-            <div class="book">
-                <p class="book-title">lorem ipsum</p>
+        
+            <div class="already-read-book">
+                <p class="book-title">El señor de los anillos</p>
                 <p class="book-author">lorem ipsum</p>
                 <p class="book-pages">200 pages</p>
-                <p class="book-read">true</p>
+                <button class="state-button book-read-button" >read</button>
+                <button class="remove-book">remove</button>
             </div>
         </div>
+    </div>
+
+    <div class="book-form hidden" >
+        <form action="">
+            <ul>
+                <li>
+                    <label for="title-form" class="block">Title</label>
+                    <input type="text" name="" id="title-form" required>
+                </li>
+                <li>
+                    <label for="author-form" class="block">Author</label>
+                    <input type="text" id="author-form" required>
+                </li>
+                <li>
+                    <label for="pages-form" class="block">Number of pages</label>
+                    <input type="number" id="pages-form" required>
+                </li>
+                <li>
+                    <label for="read-form">Have you read the book?</label>
+                    <input type="checkbox" id="read-form" required>
+                </li>
+            </ul>
+            <button type="button" class="button-form">Add Book</button>
+        </form>
+        <button class="close-cross" type="button">X</button>
     </div>
 
 
