@@ -26,7 +26,22 @@ closeCross.addEventListener("click", () => {
     form.classList.toggle("hidden");
 });
 
-function Book(title, author, pages, read) {
+
+const bookClass = class{
+    constructor(title, author,pages,read){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+
+    info(){
+        return read ? `${this.title} by ${this.author}, ${this.pages} pages, already read` : `${this.title} by ${this.author}, ${this.pages} pages, not read yet`;
+    }
+
+}
+
+/* function Book(title, author, pages, read) {
     this.title = title;
     this.author = author;
     this.pages = pages;
@@ -34,10 +49,10 @@ function Book(title, author, pages, read) {
     this.info = function () {
         return read ? `${title} by ${author}, ${pages} pages, already read` : `${title} by ${author}, ${pages} pages, not read yet`;
     }
-}
+} */
 
 function addBookToArray(title, author, pages, read) {
-    const book = new Book(title, author, pages, read);
+    const book = new bookClass (title, author, pages, read);
     myLibrary.push(book);
     /* console.log(myLibrary);
     console.log(read); */
