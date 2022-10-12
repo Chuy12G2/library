@@ -189,3 +189,9 @@ body{
 .hidden{
     display: none;
 }
+
+
+.error{
+    border-color: crimson;
+    outline: crimson;
+}

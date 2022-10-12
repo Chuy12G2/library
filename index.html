@@ -31,19 +31,19 @@
     </div>
 
     <div class="book-form hidden" >
-        <form action="">
+        <form action="" method="">
             <ul>
                 <li>
                     <label for="title-form" class="block">Title</label>
-                    <input type="text" name="" id="title-form" required>
+                    <input type="text" name="" id="title-form" required minlength="2">
                 </li>
                 <li>
                     <label for="author-form" class="block">Author</label>
-                    <input type="text" id="author-form" required>
+                    <input type="text" id="author-form" required minlength="5">
                 </li>
                 <li>
                     <label for="pages-form" class="block">Number of pages</label>
-                    <input type="number" id="pages-form" required>
+                    <input type="number" id="pages-form" required min="1">
                 </li>
                 <li>
                     <label for="read-form">Have you read the book?</label>
@@ -52,7 +52,7 @@
             </ul>
             <button type="button" class="button-form">Add Book</button>
         </form>
-        <button class="close-cross" type="button">X</button>
+        <button class="close-cross" type="submit">X</button>
     </div>
 
 
